@@ -12,6 +12,14 @@
     <ConditionalRendering />
     <h2>List Rendering</h2>
     <ListRendering />
+    <h2>Computed</h2>
+    <Computed />
+    <h2>Todo List</h2>
+    <TodoList />
+    <h2>Slots (Children)</h2>
+    <Slots>Here is some children underneath</Slots>
+    <h2>Tabs</h2>
+    <Tabs />
   </div>
 </template>
 
@@ -22,6 +30,10 @@ import EventHandling from "./components/EventHandling.vue";
 import TwoWayDataBinding from "./components/TwoWayDataBinding.vue";
 import ConditionalRendering from "./components/ConditionalRendering.vue";
 import ListRendering from "./components/ListRendering.vue";
+import Computed from "./components/Computed.vue";
+import TodoList from "./components/TodoList.vue";
+import Slots from "./components/Slots.vue";
+import Tabs from "./components/Tabs.vue";
 
 export default {
   name: "App",
@@ -32,6 +44,10 @@ export default {
     TwoWayDataBinding,
     ConditionalRendering,
     ListRendering,
+    Computed,
+    TodoList,
+    Slots,
+    Tabs,
   },
 };
 </script>
