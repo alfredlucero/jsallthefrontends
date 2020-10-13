@@ -9,7 +9,7 @@
 <h1>The Famous Cats of YouTube</h1>
 
 <ul>
-  {#each cats as { name, id } (id), i}
+  {#each cats as { name, id }, i (id)}
     <li>
       <a target="_blank" href="https://www.youtube.com/watch?v={id}">
         {i + 1}:

@@ -3,6 +3,13 @@
   import Props from "./components/Props.svelte";
   import Conditionals from "./components/Conditionals.svelte";
   import Loops from "./components/Loops.svelte";
+  import Async from "./components/Async.svelte";
+  import DomEvents from "./components/DomEvents.svelte";
+  import EventDispatch from "./components/EventDispatch.svelte";
+  import Binding from "./components/Binding.svelte";
+  import TodoList from "./components/TodoList.svelte";
+  import LifecycleMount from "./components/LifecycleMount.svelte";
+  import CounterStore from "./components/CounterStore/CounterStore.svelte";
 
   export let name;
 </script>
@@ -44,4 +51,18 @@
   <Conditionals />
   <h2>Loops</h2>
   <Loops />
+  <h2>Async</h2>
+  <Async />
+  <h2>Dom Events</h2>
+  <DomEvents />
+  <h2>Event Dispatch</h2>
+  <EventDispatch />
+  <h2>Binding</h2>
+  <Binding />
+  <h2>TodoList</h2>
+  <TodoList />
+  <h2>Lifecycle onMount</h2>
+  <LifecycleMount />
+  <h2>Stores</h2>
+  <CounterStore />
 </main>
