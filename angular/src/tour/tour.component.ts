@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'tour-root',
+  selector: 'app-tour-root',
   templateUrl: './tour.component.html',
   styleUrls: ['./tour.component.css'],
 })
