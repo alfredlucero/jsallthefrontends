@@ -10,6 +10,13 @@
   import TodoList from "./components/TodoList.svelte";
   import LifecycleMount from "./components/LifecycleMount.svelte";
   import CounterStore from "./components/CounterStore/CounterStore.svelte";
+  import ReadStore from "./components/ReadStore/ReadStore.svelte";
+  import CustomCounterStore from "./components/CustomCounterStore/CustomCounterStore.svelte";
+  import BindingStore from "./components/BindingStore/BindingStore.svelte";
+  import MotionTweened from "./components/MotionTweened.svelte";
+  import TransitionFade from "./components/TransitionFade.svelte";
+  import AnimateTodoList from "./components/AnimateTodoList.svelte";
+  import SlotBox from "./components/SlotBox.svelte";
 
   export let name;
 </script>
@@ -64,5 +71,23 @@
   <h2>Lifecycle onMount</h2>
   <LifecycleMount />
   <h2>Stores</h2>
+  <h3>Write Store Counter</h3>
   <CounterStore />
+  <h3>Read Store Time</h3>
+  <ReadStore />
+  <h3>Custom Store Counter</h3>
+  <CustomCounterStore />
+  <h3>Binding Store</h3>
+  <BindingStore />
+  <h2>Motion Tweened</h2>
+  <MotionTweened />
+  <h2>Transition Fade</h2>
+  <TransitionFade />
+  <h2>Animate Todo List</h2>
+  <AnimateTodoList />
+  <h2>Slots (children)</h2>
+  <SlotBox>
+    <h2>Hello!</h2>
+    <p>This is a box. It can contain anything.</p>
+  </SlotBox>
 </main>
