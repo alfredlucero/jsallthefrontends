@@ -1,6 +1,12 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import logo from "./logo.svg";
+import HelloWorld from "./components/HelloWorld";
+import Counter from "./components/Counter";
+import ConditionalRendering from "./components/ConditionalRendering";
+import ListRendering from "./components/ListRendering";
+import ControlledInputs from "./components/ControlledInputs";
+import Children from "./components/Children";
+import "./App.css";
 
 function App() {
   return (
@@ -19,6 +25,23 @@ function App() {
           Learn React
         </a>
       </header>
+
+      <h2>Hello World</h2>
+      <HelloWorld name="Alfred" />
+      <h2>Counter</h2>
+      <Counter />
+      <h2>Conditional Rendering</h2>
+      <ConditionalRendering />
+      <h2>List Rendering</h2>
+      <ListRendering />
+      <h2>Controlled Inputs</h2>
+      <ControlledInputs />
+      <h2>Children Composition</h2>
+      <Children>
+        <p>
+          <strong>Some cool stuff inside here</strong> - What do you think?
+        </p>
+      </Children>
     </div>
   );
 }
