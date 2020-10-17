@@ -12,4 +12,10 @@ registerApplication({
   activeWhen: "/vue",
 });
 
+registerApplication({
+  name: "svelte",
+  app: () => import("./src/svelte/svelte.app.js"),
+  activeWhen: "/svelte",
+});
+
 start();
