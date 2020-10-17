@@ -16,7 +16,7 @@ module.exports = {
     rules: [
       {
         test: /\.(js|jsx)$/,
-        exclude: /(node_modules)/,
+        exclude: /node_modules/,
         use: {
           loader: "babel-loader",
           options: {
@@ -29,6 +29,11 @@ module.exports = {
         loader: "vue-loader",
       },
       {
+        test: /\.svelte$/,
+        exclude: /node_modules/,
+        use: "svelte-loader",
+      },
+      {
         test: /\.css$/,
         use: ["style-loader", "css-loader"],
       },
@@ -37,12 +42,14 @@ module.exports = {
   resolve: {
     alias: {
       vue: "vue/dist/vue.js",
+      svelte: path.resolve("node_modules", "svelte"),
     },
+    mainFields: ["svelte", "browser", "module", "main"],
     modules: [path.resolve(__dirname, "node_modules")],
     fallback: {
       fs: false,
     },
-    extensions: [".js", ".json", ".jsx", ".vue", ".css"],
+    extensions: [".mjs", ".js", ".json", ".jsx", ".vue", ".svelte", ".css"],
   },
   plugins: [
     new HtmlWebpackPlugin({
