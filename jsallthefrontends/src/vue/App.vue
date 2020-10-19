@@ -1,3 +1,7 @@
+<style>
+@import "./App.css";
+</style>
+
 <template>
   <div>
     <h1>Hello from Vue!!</h1>

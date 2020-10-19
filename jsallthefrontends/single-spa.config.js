@@ -1,8 +1,20 @@
 import { registerApplication, start } from "single-spa";
 
 registerApplication({
+  name: "nav",
+  app: () => import("./src/nav/nav.app.js"),
+  activeWhen: "",
+});
+
+registerApplication({
+  name: "home",
+  app: () => import("./src/home/home.app.js"),
+  activeWhen: (location) => location.pathname === "/",
+});
+
+registerApplication({
   name: "react",
-  app: () => import("./src/react/main.app.js"),
+  app: () => import("./src/react/react.app.js"),
   activeWhen: "/react",
 });
 
