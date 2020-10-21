@@ -55,20 +55,14 @@ module.exports = {
     extensions: [".mjs", ".js", ".json", ".jsx", ".vue", ".svelte", ".css"],
   },
   plugins: [
+    new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
       inject: true,
       template: path.resolve(__dirname, "./index.html"),
-      minify: {
-        collapseInlineTagWhitespace: true,
-        collapseWhitespace: true,
-        minifyCSS: true,
-        minifyJS: true,
-      },
     }),
-    new CleanWebpackPlugin(),
     new VueLoaderPlugin(),
   ],
-  devtool: "source-map",
+  devtool: "cheap-source-map",
   devServer: {
     historyApiFallback: true,
     compress: true,
