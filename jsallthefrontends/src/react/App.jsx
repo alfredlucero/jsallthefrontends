@@ -3,12 +3,12 @@ import HelloWorld, { HelloWorldCode } from "./components/HelloWorld";
 import "./App.css";
 
 const App = () => (
-  <h1>
-    Hello from React
+  <div>
+    <h1>Hello from React worldddasd</h1>
     <HelloWorld />
     <HelloWorld name="Alfred" />
     <HelloWorldCode />
-  </h1>
+  </div>
 );
 
 export default App;

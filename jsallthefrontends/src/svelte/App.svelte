@@ -8,9 +8,9 @@
 <style>
 </style>
 
-<h1>
-  Hello from a Svelte file
+<div>
+  <h1>Hello from a Svelte file hahahss</h1>
   <HelloWorld />
   <HelloWorld name="Alfred" />
   <HelloWorldCode />
-</h1>
+</div>

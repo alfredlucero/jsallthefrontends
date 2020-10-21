@@ -1,4 +1,5 @@
 import { registerApplication, start } from "single-spa";
+import "./index.css";
 
 registerApplication({
   name: "nav",
