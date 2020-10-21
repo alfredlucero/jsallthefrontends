@@ -1,0 +1,34 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@layer base {
+  @font-face {
+    font-family: "Atkinson-Hyperlegible";
+    src: url("fonts/Atkinson-Hyperlegible-Regular-102a.woff2") format("woff2"),
+      url("fonts/Atkinson-Hyperlegible-Regular-102.woff") format("woff");
+    font-weight: 400;
+  }
+  h1 {
+    @apply text-3xl;
+    @apply text-teal-800;
+    font-weight: 600;
+  }
+  h2 {
+    @apply text-2xl;
+    @apply text-teal-800;
+    font-weight: 600;
+  }
+  h3 {
+    @apply text-xl;
+    @apply text-teal-800;
+    font-weight: 600;
+  }
+
+  body {
+    font-family: "Atkinson-Hyperlegible", sans-serif;
+    font-weight: 400;
+    @apply text-lg;
+    @apply text-gray-800;
+  }
+}
