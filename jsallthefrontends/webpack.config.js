@@ -69,7 +69,7 @@ module.exports = {
   plugins: [
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
-      inject: true,
+      // inject: true,
       template: path.resolve(__dirname, "./index.html"),
     }),
     new VueLoaderPlugin(),
