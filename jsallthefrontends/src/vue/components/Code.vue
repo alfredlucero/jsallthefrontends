@@ -17,14 +17,8 @@ import "./Code.css";
 export default {
   name: "Code",
   props: {
-    code: String,
-    language: String,
-  },
-  data() {
-    return {
-      code: "",
-      language: "javascript",
-    };
+    code: { type: String, default: "" },
+    language: { type: String, default: "javascript" },
   },
   computed: {
     languageClass() {
