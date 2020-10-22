@@ -60,7 +60,7 @@ module.exports = {
   resolve: {
     alias: {
       vue: "vue/dist/vue.js",
-      svelte: sveltePath,
+      svelte: path.resolve("node_modules", "svelte"),
     },
     mainFields: ["svelte", "browser", "module", "main"],
     modules: [path.resolve(__dirname, "node_modules")],
