@@ -15,7 +15,7 @@
 <style>
 </style>
 
-<h1>SVELTE</h1>
+<h1>SVELTE 3</h1>
 <a href="https://svelte.dev/" target="_blank">Docs</a>
 
 <div>
