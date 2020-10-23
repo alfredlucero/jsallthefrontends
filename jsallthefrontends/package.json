@@ -14,13 +14,16 @@
     "prismjs": "^1.22.0",
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
+    "react-router-dom": "^5.2.0",
     "single-spa": "^5.8.0",
     "single-spa-react": "^3.1.0",
     "single-spa-svelte": "^2.1.0",
     "single-spa-vue": "^1.10.1",
     "svelte": "^3.29.0",
+    "svelte-spa-router": "^3.0.4",
     "tailwindcss": "^1.9.4",
-    "vue": "^2.6.12"
+    "vue": "^2.6.12",
+    "vue-router": "^3.4.7"
   },
   "devDependencies": {
     "@babel/core": "^7.12.3",
@@ -42,7 +45,7 @@
     "svelte-loader": "^2.13.6",
     "vue-loader": "^15.9.3",
     "vue-template-compiler": "^2.6.12",
-    "webpack": "^5.1.3",
+    "webpack": "^4.44.2",
     "webpack-cli": "^4.0.0",
     "webpack-dev-server": "^3.11.0"
   }

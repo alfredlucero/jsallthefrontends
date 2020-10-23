@@ -1,16 +1,23 @@
 <script>
-  import HelloWorld from "./components/HelloWorld.svelte";
-  import HelloWorldCode from "./components/HelloWorldCode.svelte";
+  import Router from "svelte-spa-router";
+  import { link } from "svelte-spa-router";
+  import HomePage from "./components/HomePage.svelte";
+  import HelloWorldPage from "./components/HelloWorldPage.svelte";
   import "./App.css";
-  console.log("over here in svelte!");
+
+  const routes = {
+    "/": HomePage,
+    "/hello-world": HelloWorldPage,
+    "*": HomePage,
+  };
 </script>
 
 <style>
 </style>
 
+<h1>SVELTE 3</h1>
+<a href="https://svelte.dev/" target="_blank">Docs</a>
+
 <div>
-  <h1>Hello from a Svelte file hahahss</h1>
-  <HelloWorld />
-  <HelloWorld name="Alfred" />
-  <HelloWorldCode />
+  <Router {routes} />
 </div>

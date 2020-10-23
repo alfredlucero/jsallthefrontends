@@ -4,22 +4,15 @@
 
 <template>
   <div>
-    <h1>Hello from Vue!! Backtrackingasdfsaasdfsfddf</h1>
-    <HelloWorld />
-    <HelloWorld name="Alfred" />
-    <HelloWorldCode />
+    <h1>VUE 2</h1>
+    <a href="https://vuejs.org/v2/guide/" target="_blank">Docs</a>
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
-import HelloWorldCode from "./components/HelloWorldCode.vue";
-
 export default {
   name: "App",
-  components: {
-    HelloWorld,
-    HelloWorldCode,
-  },
+  components: {},
 };
 </script>

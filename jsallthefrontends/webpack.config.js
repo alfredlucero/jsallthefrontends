@@ -10,12 +10,14 @@ module.exports = {
   },
   output: {
     filename: "[name].js",
+    // For history slash-based routers to work on refresh i.e. react-router, vue-router
+    publicPath: "/",
     path: path.resolve(__dirname, "dist"),
   },
   module: {
     rules: [
       {
-        test: /\.(mjs|js|jsx)$/,
+        test: /\.(js|jsx)$/,
         exclude: /node_modules/,
         use: {
           loader: "babel-loader",
@@ -32,7 +34,6 @@ module.exports = {
       },
       {
         test: /\.svelte$/,
-        exclude: /node_modules/,
         use: "svelte-loader",
       },
       {
@@ -54,6 +55,10 @@ module.exports = {
       },
     ],
   },
+  // Webpack 4
+  node: {
+    fs: "empty",
+  },
   resolve: {
     alias: {
       vue: "vue/dist/vue.js",
@@ -61,23 +66,24 @@ module.exports = {
     },
     mainFields: ["svelte", "browser", "module", "main"],
     modules: [path.resolve(__dirname, "node_modules")],
-    fallback: {
-      fs: false,
-    },
-    extensions: [".mjs", ".js", ".json", ".jsx", ".vue", ".svelte", ".css"],
+    // Webpack 5
+    // fallback: {
+    //   fs: false,
+    // },
+    extensions: [".mjs", ".js", ".svelte", ".jsx", ".json", ".vue", ".css"],
   },
   plugins: [
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
-      // inject: true,
       template: path.resolve(__dirname, "./index.html"),
     }),
     new VueLoaderPlugin(),
   ],
   devtool: "cheap-source-map",
   devServer: {
+    // For history slash-based routers to work on refresh i.e. react-router, vue-router
     historyApiFallback: true,
-    compress: true,
     port: 8080,
+    publicPath: "/",
   },
 };

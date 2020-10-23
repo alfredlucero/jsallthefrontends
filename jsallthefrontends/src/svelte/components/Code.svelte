@@ -1,6 +1,6 @@
 <script>
   import Prism from "prismjs";
-  import { onMount } from "svelte/index.js";
+  import { onMount } from "svelte";
   import "./Code.css";
 
   export let code = "";
