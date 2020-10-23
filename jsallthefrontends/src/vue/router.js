@@ -10,6 +10,6 @@ const routes = [
 
 export const router = new VueRouter({
   routes,
-  mode: "hash",
+  mode: "history",
   base: "/vue",
 });

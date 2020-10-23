@@ -10,6 +10,8 @@ module.exports = {
   },
   output: {
     filename: "[name].js",
+    // For history slash-based routers to work on refresh i.e. react-router, vue-router
+    publicPath: "/",
     path: path.resolve(__dirname, "dist"),
   },
   module: {
@@ -79,8 +81,9 @@ module.exports = {
   ],
   devtool: "cheap-source-map",
   devServer: {
+    // For history slash-based routers to work on refresh i.e. react-router, vue-router
     historyApiFallback: true,
-    compress: true,
     port: 8080,
+    publicPath: "/",
   },
 };
