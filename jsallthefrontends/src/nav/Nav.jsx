@@ -27,7 +27,6 @@ const Nav = () => {
 
   const homePath = "/";
   const isHomePageActive = activePath === homePath;
-  //    // <nav className="w-screen flex justify-between p-4">
 
   return (
     <nav className="flex bg-white border-b border-gray-200 fixed top-0 inset-x-0 z-100 h-16 items-center">
