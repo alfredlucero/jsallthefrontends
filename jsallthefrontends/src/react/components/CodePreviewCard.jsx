@@ -15,7 +15,7 @@ const otherFrontendsAvailableMap = {
 const PreviewLink = ({ link }) => {
   return (
     <Link
-      className="bg-blue-200 rounded px-4 py-2 text-base font-semibold text-blue-700 hover:text-blue-900"
+      className="bg-blue-200 rounded px-4 py-2 text-base font-semibold text-blue-600 hover:text-blue-800"
       to={link}
     >
       <i className="fas fa-eye"></i> View
