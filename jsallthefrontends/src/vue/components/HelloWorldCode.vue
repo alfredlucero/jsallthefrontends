@@ -12,8 +12,8 @@ export default {
   },
   data() {
     return {
-      helloWorldCode: `
-<template>
+      helloWorldCode: 
+`<template>
   <div>Hello {{ name }}!</div>
 </template>
 
