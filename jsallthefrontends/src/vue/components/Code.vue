@@ -1,13 +1,7 @@
-<style scoped>
-/* TODO: add code wrapper styles */
-</style>
-
 <template>
-  <div class="code-wrapper">
-    <pre>
-      <code :class="languageClass">{{code}}</code>
-    </pre>
-  </div>
+  <pre class="rounded-b-md lg:rounded-tl-none lg:rounded-bl-none lg:rounded-tr-md lg:rounded-br-md bg-gray-800 scrollbar-none m-0 p-4 text-base">
+    <code :class="[languageClass, 'inline-block', 'scrolling-touch']">{{code}}</code>
+  </pre>
 </template>
 
 <script>

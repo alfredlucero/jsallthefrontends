@@ -11,11 +11,8 @@
   });
 </script>
 
-<style>
-</style>
-
-<div class="code-wrapper">
-  <pre>
-    <code class="language-{language}">{code}</code>
-  </pre>
-</div>
+<pre
+  class="rounded-b-md lg:rounded-tl-none lg:rounded-bl-none lg:rounded-tr-md lg:rounded-br-md bg-gray-800 scrollbar-none m-0 p-4 text-base">
+  <code
+    class="language-{language} inline-block scrolling-touch">{code}</code>
+</pre>

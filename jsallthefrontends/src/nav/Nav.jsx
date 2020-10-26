@@ -86,7 +86,7 @@ const Nav = () => {
         </div>
 
         <a
-          className="inline-block text-xl text-gray-500 hover:text-gray-700 transition ease-in-out duration-700 transform hover:scale-110"
+          className="inline-block text-2xl text-gray-500 hover:text-gray-700 transition ease-in-out duration-700 transform hover:scale-110"
           href="https://github.com/alfredlucero/jsallthefrontends"
           target="_blank"
         >

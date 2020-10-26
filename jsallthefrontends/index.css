@@ -11,17 +11,17 @@
   }
   h1 {
     @apply text-3xl;
-    @apply text-teal-800;
+    @apply text-blue-800;
     font-weight: 600;
   }
   h2 {
     @apply text-2xl;
-    @apply text-teal-800;
+    @apply text-blue-800;
     font-weight: 600;
   }
   h3 {
     @apply text-xl;
-    @apply text-teal-800;
+    @apply text-blue-800;
     font-weight: 600;
   }
 
