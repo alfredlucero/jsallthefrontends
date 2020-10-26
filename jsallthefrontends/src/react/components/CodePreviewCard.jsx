@@ -15,7 +15,7 @@ const otherFrontendsAvailableMap = {
 const PreviewLink = ({ link }) => {
   return (
     <Link
-      className="bg-blue-200 rounded px-4 py-2 text-lg font-semibold text-blue-700 hover:text-blue-900"
+      className="bg-blue-200 rounded px-4 py-2 text-base font-semibold text-blue-700 hover:text-blue-900"
       to={link}
     >
       <i className="fas fa-eye"></i> View
@@ -29,7 +29,7 @@ const OtherFrontendsPreviewLink = ({ name, link }) => {
   if (otherFrontend) {
     return (
       <a
-        className="inline-block bg-gray-200 rounded px-3 py-1 text-sm font-semibold text-gray-700 hover:text-gray-900 mr-2 mb-2"
+        className="inline-block bg-gray-200 rounded px-3 py-1 text-sm font-semibold text-gray-600 hover:text-gray-800 mr-2 mb-2"
         href={`${otherFrontend.previewLinkPrefix}${link}`}
       >
         {otherFrontend.previewName}
@@ -50,7 +50,7 @@ const CodePreviewCard = ({
     <div className="max-w-sm rounded overflow-hidden shadow-lg transition ease-in-out duration-700 transform hover:scale-105">
       <div className="px-6 py-4">
         <div className="font-bold text-xl mb-2">{title}</div>
-        <p className="text-gray-700">{description}</p>
+        <p className="text-gray-600">{description}</p>
       </div>
       <div className="flex justify-center mb-4 mx-4">
         <PreviewLink link={previewLink} />
