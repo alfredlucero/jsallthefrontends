@@ -4,7 +4,7 @@
       <h2 class="mb-2">Vue Code Examples</h2>
       <p class="mb-6">
         Sometimes you want a quick peek of what it is like to implement
-        something in another frontend framework. Let's dive into Vue2 code
+        something in another frontend framework. Let's dive into Vue 2 code
         examples! You can even open up the Vue dev tools if you have it
         installed in your browser to view the components.
       </p>

@@ -8,7 +8,7 @@ const HomePage = () => {
       <h2 className="mb-2">React Code Examples</h2>
       <p className="mb-6">
         Sometimes you want a quick peek of what it is like to implement
-        something in another frontend framework. Let's dive into React code
+        something in another frontend framework. Let's dive into React 16 code
         examples! You can even open up the React dev tools if you have it
         installed in your browser to view the components.
       </p>

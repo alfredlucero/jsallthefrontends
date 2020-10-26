@@ -4,7 +4,7 @@
       <h2 class="mb-4">Hello World</h2>
       <p class="mb-6">
         The tried and true baby steps into a new world. Greetings from your
-        first React component!
+        first Vue component!
       </p>
       <CodePreview>
         <template v-slot:preview>
