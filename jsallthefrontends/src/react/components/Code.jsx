@@ -8,11 +8,11 @@ const Code = ({ code, language }) => {
   }, []);
 
   return (
-    <div className="code-wrapper">
-      <pre>
-        <code className={`language-${language}`}>{code}</code>
-      </pre>
-    </div>
+    <pre className="rounded-b-md lg:rounded-tl-none lg:rounded-bl-none lg:rounded-tr-md lg:rounded-br-md bg-gray-800 scrollbar-none m-0 p-4 text-base">
+      <code className={`language-${language} inline-block scrolling-touch`}>
+        {code}
+      </code>
+    </pre>
   );
 };
 
