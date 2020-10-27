@@ -33,7 +33,7 @@ const Nav = () => {
       <div className="w-full max-w-screen-xl relative mx-auto px-6 flex justify-between">
         <div>
           <a
-            href="/"
+            href={homePath}
             className={cn(
               "inline-block mr-6 text-xl transition ease-in-out duration-700 transform hover:scale-105 bg-gradient-to-r bg-clip-text text-transparent",
               {
@@ -53,7 +53,7 @@ const Nav = () => {
                 "from-pink-500 to-orange-500 border-b-2 border-orange-400": isReactPageActive,
               }
             )}
-            href="/react"
+            href={reactPath}
           >
             React
           </a>
@@ -66,7 +66,7 @@ const Nav = () => {
                 "from-pink-500 to-orange-500 border-b-2 border-orange-400": isVuePageActive,
               }
             )}
-            href="/vue"
+            href={vuePath}
           >
             Vue
           </a>
@@ -79,7 +79,8 @@ const Nav = () => {
                 "from-pink-500 to-orange-500 border-b-2 border-orange-400": isSveltePageActive,
               }
             )}
-            href="/svelte"
+            // Svelte app uses a hash router instead
+            href={`${sveltePath}#`}
           >
             Svelte
           </a>

@@ -5,12 +5,7 @@ import HelloWorldPage from "./components/HelloWorldPage";
 import "./App.css";
 
 const App = () => (
-  <div>
-    <h1>REACT 16</h1>
-    <a href="https://reactjs.org/docs/getting-started.html" target="_blank">
-      Docs
-    </a>
-
+  <div className="mt-16">
     <Router basename="/react">
       <Switch>
         <Route exact path="/">

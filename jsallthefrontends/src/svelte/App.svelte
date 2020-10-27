@@ -12,12 +12,6 @@
   };
 </script>
 
-<style>
-</style>
-
-<h1>SVELTE 3</h1>
-<a href="https://svelte.dev/" target="_blank">Docs</a>
-
-<div>
+<div class="mt-16">
   <Router {routes} />
 </div>
