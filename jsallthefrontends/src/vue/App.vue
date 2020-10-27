@@ -3,9 +3,7 @@
 </style>
 
 <template>
-  <div>
-    <h1>VUE 2</h1>
-    <a href="https://vuejs.org/v2/guide/" target="_blank">Docs</a>
+  <div class="mt-16">
     <router-view></router-view>
   </div>
 </template>
