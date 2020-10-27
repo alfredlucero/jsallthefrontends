@@ -2,6 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import HomePage from "./components/HomePage";
 import HelloWorldPage from "./components/HelloWorldPage";
+import CounterPage from "./components/CounterPage";
 import "./App.css";
 
 const App = () => (
@@ -13,6 +14,9 @@ const App = () => (
         </Route>
         <Route exact path="/hello-world">
           <HelloWorldPage />
+        </Route>
+        <Route exact path="/counter">
+          <CounterPage />
         </Route>
         <Route path="*">
           <HomePage />

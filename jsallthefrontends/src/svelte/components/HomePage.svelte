@@ -4,7 +4,7 @@
 </script>
 
 <Layout>
-  <h2 class="mb-2">Svelte Code Examples</h2>
+  <h2 class="my-4">Svelte Code Examples</h2>
   <p class="mb-6">
     Sometimes you want a quick peek of what it is like to implement something in
     another frontend framework. Let's dive into Svelte 3 code examples! You can

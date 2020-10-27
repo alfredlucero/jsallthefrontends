@@ -10,7 +10,7 @@
       </slot>
     </div>
   </div>
-  <div class="flex-1">
+  <div class="flex-1 w-full lg:w-1/2">
     <slot name="code">
       <!-- Code Component goes here -->
     </slot>

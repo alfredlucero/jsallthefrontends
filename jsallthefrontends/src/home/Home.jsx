@@ -55,7 +55,7 @@ const Home = () => {
           Check out the JavaScript frontends aka "just all the frontends"
         </h3>
 
-        <div className="flex flex-col md:flex-row">
+        <div className="flex flex-col md:flex-row max-w-full">
           {frontends.map((frontend, key) => (
             <div className="my-2 md:mx-2 flex-1">
               <FrontendCard frontend={frontend} key={key} />
@@ -66,7 +66,9 @@ const Home = () => {
         <h3 className="my-4">Check out the core examples instead</h3>
         <div className="flex flex-col md:flex-row">
           {codeExamples.map((codeExample, key) => (
-            <CodeExampleCard codeExample={codeExample} key={key} />
+            <div className="my-2 md:mx-2 flex-1">
+              <CodeExampleCard codeExample={codeExample} key={key} />
+            </div>
           ))}
         </div>
       </Layout>
