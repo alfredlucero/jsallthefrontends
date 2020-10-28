@@ -1,6 +1,23 @@
 <script>
   import Layout from "./Layout.svelte";
   import CodePreviewCard from "./CodePreviewCard.svelte";
+
+  const codePreviews = [
+    {
+      title: "Hello World",
+      description:
+        "The tried and true baby steps into a new world - your first React component!",
+      previewLink: "/hello-world",
+      otherFrontendsAvailable: ["react", "vue"],
+    },
+    {
+      title: "Counter",
+      description:
+        "Learn the basics of state management and event handling with a counter.",
+      previewLink: "/counter",
+      otherFrontendsAvailable: ["react", "vue"],
+    },
+  ];
 </script>
 
 <Layout>
@@ -11,9 +28,17 @@
     even open up the Svelte dev tools if you have it installed in your browser
     to view the components.
   </p>
-  <CodePreviewCard
-    title="Hello World"
-    description="The tried and true baby steps into a new world. Greetings from your first Svelte component!"
-    previewLink="/hello-world"
-    otherFrontendsAvailable={['react', 'vue']} />
+  {#if codePreviews.length > 0}
+    <div class="flex justify-start flex-col md:flex-row">
+      {#each codePreviews as codePreview (codePreviews.name)}
+        <div class="my-2 md:mx-2">
+          <CodePreviewCard
+            title={codePreview.title}
+            description={codePreview.description}
+            previewLink={codePreview.previewLink}
+            otherFrontendsAvailable={codePreview.otherFrontendsAvailable} />
+        </div>
+      {/each}
+    </div>
+  {/if}
 </Layout>
