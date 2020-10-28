@@ -6,7 +6,7 @@ const codePreviews = [
   {
     title: "Hello World",
     description:
-      "The tried and true baby steps into a new world. Greetings from your first React component!",
+      "The tried and true baby steps into a new world - your first React component!",
     previewLink: "/hello-world",
     otherFrontendsAvailable: ["vue", "svelte"],
   },
