@@ -25,9 +25,19 @@ const HomePage = () => {
       <h2 className="my-4">React Code Examples</h2>
       <p className="mb-6">
         Sometimes you want a quick peek of what it is like to implement
-        something in another frontend framework. Let's dive into React 16 code
-        examples! You can even open up the React dev tools if you have it
-        installed in your browser to view the components.
+        something in another frontend framework. Let's dive into React 16+ code
+        examples! Oh yeah, everything under /react in the main content area is
+        built with React 16+ by the way (also the navbar and root home page if
+        you noticed). You can even{" "}
+        <a
+          href="https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en"
+          target="_blank"
+          class="text-blue-500 hover:text-blue-700"
+        >
+          download
+        </a>{" "}
+        and open up the React dev tools if you have it installed in your browser
+        to view the components.
       </p>
       <div className="flex justify-start flex-col md:flex-row">
         {codePreviews.map((codePreview, key) => (

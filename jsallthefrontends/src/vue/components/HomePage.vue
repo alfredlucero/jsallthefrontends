@@ -3,10 +3,15 @@
     <template v-slot:children>
       <h2 class="my-4">Vue Code Examples</h2>
       <p class="mb-6">
-        Sometimes you want a quick peek of what it is like to implement
-        something in another frontend framework. Let's dive into Vue 2 code
-        examples! You can even open up the Vue dev tools if you have it
-        installed in your browser to view the components.
+        Sometimes you want a quick peek of what it is like to implement something in
+        another frontend framework. Let's dive into Vue 2 code examples! Oh yeah,
+        everything under /vue in the main content area is built with Vue 2 by the way. You can even
+        <a
+          href="https://chrome.google.com/webstore/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd?hl=en"
+          target="_blank"
+          class="text-blue-500 hover:text-blue-700">download</a>
+        and open up the Vue dev tools if you have it installed in your browser to
+        view the components.
       </p>
       <div v-if="codePreviews.length > 0" class="flex justify-start flex-col md:flex-row">
         <div  
