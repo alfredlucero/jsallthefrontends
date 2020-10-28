@@ -34,7 +34,17 @@ const codeExamples = [
       frontendsMap.svelte,
     ],
   },
-  // TODO: add more code examples
+  {
+    title: "Counter",
+    description:
+      "Learn the basics of state management and event handling with a counter.",
+    exampleLinkPath: "/counter",
+    frontendExamples: [
+      frontendsMap.react,
+      frontendsMap.vue,
+      frontendsMap.svelte,
+    ],
+  },
 ];
 
 const Home = () => {
@@ -66,7 +76,7 @@ const Home = () => {
         <h3 className="my-4">Check out the core examples instead</h3>
         <div className="flex flex-col md:flex-row">
           {codeExamples.map((codeExample, key) => (
-            <div className="my-2 md:mx-2 flex-1">
+            <div className="my-2 md:mx-2">
               <CodeExampleCard codeExample={codeExample} key={key} />
             </div>
           ))}
