@@ -1,19 +1,26 @@
 <template>
   <Layout>
     <template v-slot:children>
-      <h2 class="mb-2">Vue Code Examples</h2>
+      <h2 class="my-4">Vue Code Examples</h2>
       <p class="mb-6">
         Sometimes you want a quick peek of what it is like to implement
         something in another frontend framework. Let's dive into Vue 2 code
         examples! You can even open up the Vue dev tools if you have it
         installed in your browser to view the components.
       </p>
-      <CodePreviewCard
-        title="Hello World"
-        description="The tried and true baby steps into a new world. Greetings from your first Vue component!"
-        previewLink="/hello-world"
-        v-bind:otherFrontendsAvailable="['react', 'svelte']"
-      />
+      <div v-if="codePreviews.length > 0" class="flex justify-start flex-col md:flex-row">
+        <div  
+          v-for="codePreview in codePreviews"
+          :key="codePreview.name"
+          class="my-2 md:mx-2">
+          <CodePreviewCard
+            :title="codePreview.title"
+            :description="codePreview.description"
+            :previewLink="codePreview.previewLink"
+            v-bind:otherFrontendsAvailable="codePreview.otherFrontendsAvailable"
+          />
+        </div>
+      </div>
     </template>
   </Layout>
 </template>
@@ -22,11 +29,33 @@
 import Layout from "./Layout.vue";
 import CodePreviewCard from "./CodePreviewCard.vue";
 
+const codePreviews = [
+  {
+    title: "Hello World",
+    description:
+      "The tried and true baby steps into a new world - your first React component!",
+    previewLink: "/hello-world",
+    otherFrontendsAvailable: ["react", "svelte"],
+  },
+  {
+    title: "Counter",
+    description:
+      "Learn the basics of state management and event handling with a counter.",
+    previewLink: "/counter",
+    otherFrontendsAvailable: ["react", "svelte"],
+  },
+];
+
 export default {
   name: "HomePage",
   components: {
     Layout,
     CodePreviewCard,
+  },
+  data() {
+    return {
+      codePreviews,
+    };
   },
 };
 </script>
