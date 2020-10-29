@@ -45,6 +45,17 @@ const codeExamples = [
       frontendsMap.svelte,
     ],
   },
+  {
+    title: "Todo List",
+    description:
+      "Render and manage a list of anything by looking at your favorite todo list example.",
+    exampleLinkPath: "/todo-list",
+    frontendExamples: [
+      frontendsMap.react,
+      frontendsMap.vue,
+      frontendsMap.svelte,
+    ],
+  },
 ];
 
 const Home = () => {
