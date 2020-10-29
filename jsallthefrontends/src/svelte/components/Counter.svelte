@@ -13,7 +13,7 @@
 <div>
   <div class="text-color-700 font-bold text-6xl text-center mb-4">{count}</div>
 
-  <div>
+  <div class="flex justify-center">
     <button
       type="button"
       class="bg-red-200 text-red-600 hover:text-red-800 py-2 px-4 rounded mr-4"

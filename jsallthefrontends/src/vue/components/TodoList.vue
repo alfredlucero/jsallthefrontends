@@ -58,6 +58,7 @@
 export default {
   name: "TodoList",
   props: {
+    // initialTodos prop looks like [{ title: "Some todo", done: false}, ...]
     initialTodos: {
       type: Array,
       default: [],

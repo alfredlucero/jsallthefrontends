@@ -17,6 +17,13 @@
       previewLink: "/counter",
       otherFrontendsAvailable: ["react", "vue"],
     },
+    {
+      title: "Todo List",
+      description:
+        "Render and manage a list of anything by looking at your favorite todo list example.",
+      previewLink: "/todo-list",
+      otherFrontendsAvailable: ["react", "vue"],
+    },
   ];
 </script>
 
