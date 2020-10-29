@@ -5,10 +5,10 @@ import HelloWorld, { HelloWorldCode } from "./HelloWorld";
 
 const HelloWorldPreview = () => {
   return (
-    <>
+    <div className="text-center">
       <HelloWorld />
       <HelloWorld name="Alfred" />
-    </>
+    </div>
   );
 };
 

@@ -17,6 +17,13 @@ const codePreviews = [
     previewLink: "/counter",
     otherFrontendsAvailable: ["vue", "svelte"],
   },
+  {
+    title: "Todo List",
+    description:
+      "Render and manage a list of anything by looking at your favorite todo list example.",
+    previewLink: "/todo-list",
+    otherFrontendsAvailable: ["vue", "svelte"],
+  },
 ];
 
 const HomePage = () => {
