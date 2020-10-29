@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Code from "./Code";
 
 // initialTodos prop looks like [{ title: "Some todo", done: false}, ...]
-const TodoList = ({ initialTodos }) => {
+const TodoList = ({ initialTodos = [] }) => {
   const [todos, setTodos] = useState(initialTodos);
   const [todoInput, setTodoInput] = useState("");
 

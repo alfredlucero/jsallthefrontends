@@ -49,6 +49,13 @@ const codePreviews = [
     previewLink: "/counter",
     otherFrontendsAvailable: ["react", "svelte"],
   },
+  {
+    title: "Todo List",
+    description:
+      "Render and manage a list of anything by looking at your favorite todo list example.",
+    previewLink: "/todo-list",
+    otherFrontendsAvailable: ["react", "svelte"],
+  },
 ];
 
 export default {
