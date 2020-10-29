@@ -18,7 +18,7 @@ const Counter = () => {
         {count}
       </div>
 
-      <div>
+      <div className="flex justify-center">
         <button
           type="button"
           className="bg-red-200 text-red-600 hover:text-red-800 py-2 px-4 rounded mr-4"

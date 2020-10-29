@@ -33,7 +33,7 @@ const otherFrontendsAvailableMap = {
     previewName: "React",
   },
   svelte: {
-    previewLinkPrefix: "/svelte",
+    previewLinkPrefix: "/svelte#",
     previewName: "Svelte",
   },
 };

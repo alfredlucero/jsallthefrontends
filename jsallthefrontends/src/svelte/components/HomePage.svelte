@@ -17,6 +17,13 @@
       previewLink: "/counter",
       otherFrontendsAvailable: ["react", "vue"],
     },
+    {
+      title: "Todo List",
+      description:
+        "Render and manage a list of anything by looking at your favorite todo list example.",
+      previewLink: "/todo-list",
+      otherFrontendsAvailable: ["react", "vue"],
+    },
   ];
 </script>
 
@@ -24,9 +31,14 @@
   <h2 class="my-4">Svelte Code Examples</h2>
   <p class="mb-6">
     Sometimes you want a quick peek of what it is like to implement something in
-    another frontend framework. Let's dive into Svelte 3 code examples! You can
-    even open up the Svelte dev tools if you have it installed in your browser
-    to view the components.
+    another frontend framework. Let's dive into Svelte 3 code examples! Oh yeah,
+    everything under /svelte in the main content area is built with Svelte by
+    the way. You can check out the
+    <a
+      href="https://github.com/alfredlucero/jsallthefrontends/tree/main/jsallthefrontends/src/svelte"
+      target="_blank"
+      class="text-blue-500 hover:text-blue-700">source code</a>
+    here if you're curious.
   </p>
   {#if codePreviews.length > 0}
     <div class="flex justify-start flex-col md:flex-row">
