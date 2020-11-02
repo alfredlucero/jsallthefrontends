@@ -56,6 +56,17 @@ const codeExamples = [
       frontendsMap.svelte,
     ],
   },
+  {
+    title: "Tabs",
+    description:
+      "Showing one piece of content at a time - learn composition and state with tabs.",
+    exampleLinkPath: "/tabs",
+    frontendExamples: [
+      frontendsMap.react,
+      frontendsMap.vue,
+      frontendsMap.svelte,
+    ],
+  },
 ];
 
 const Home = () => {
@@ -76,16 +87,16 @@ const Home = () => {
           Check out the JavaScript frontends aka "just all the frontends"
         </h3>
 
-        <div className="flex flex-col md:flex-row max-w-full">
+        <div className="grid grid-cols-1 md:grid-cols-3">
           {frontends.map((frontend, key) => (
-            <div className="my-2 md:mx-2 flex-1">
+            <div className="my-2 md:mx-2">
               <FrontendCard frontend={frontend} key={key} />
             </div>
           ))}
         </div>
 
         <h3 className="my-4">Check out the core examples instead</h3>
-        <div className="flex flex-col md:flex-row">
+        <div className="grid grid-cols-1 md:grid-cols-3">
           {codeExamples.map((codeExample, key) => (
             <div className="my-2 md:mx-2">
               <CodeExampleCard codeExample={codeExample} key={key} />

@@ -46,7 +46,7 @@ const HomePage = () => {
         and open up the React dev tools if you have it installed in your browser
         to view the components.
       </p>
-      <div className="flex justify-start flex-col md:flex-row">
+      <div className="grid grid-cols-1 md:grid-cols-3">
         {codePreviews.map((codePreview, key) => (
           <div className="my-2 md:mx-2">
             <CodePreviewCard {...codePreview} key={key} />
