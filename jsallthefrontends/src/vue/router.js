@@ -4,6 +4,7 @@ import HomePage from "./components/HomePage.vue";
 import CounterPage from "./components/CounterPage.vue";
 import TodoListPage from "./components/TodoListPage.vue";
 import TabsPage from "./components/TabsPage.vue";
+import CarouselPage from "./components/CarouselPage.vue";
 
 const routes = [
   { path: "/", component: HomePage },
@@ -11,6 +12,7 @@ const routes = [
   { path: "/counter", component: CounterPage },
   { path: "/todo-list", component: TodoListPage },
   { path: "/tabs", component: TabsPage },
+  { path: "/carousel", component: CarouselPage },
   { path: "*", component: HomePage },
 ];
 

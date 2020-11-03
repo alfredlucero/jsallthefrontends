@@ -84,7 +84,8 @@ const Home = () => {
         </p>
 
         <h3 className="mb-4">
-          Check out the JavaScript frontends aka "just all the frontends"
+          Check out the JavaScript frontends aka "just all the frontends" -
+          well, just the ones we integrated so far :)
         </h3>
 
         <div className="grid grid-cols-1 md:grid-cols-3">
