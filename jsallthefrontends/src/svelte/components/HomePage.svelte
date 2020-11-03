@@ -24,6 +24,13 @@
       previewLink: "/todo-list",
       otherFrontendsAvailable: ["react", "vue"],
     },
+    {
+      title: "Tabs",
+      description:
+        "Showing one piece of content at a time - learn composition and state with tabs.",
+      previewLink: "/tabs",
+      otherFrontendsAvailable: ["react", "vue"],
+    },
   ];
 </script>
 
