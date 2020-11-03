@@ -24,6 +24,13 @@
       previewLink: "/todo-list",
       otherFrontendsAvailable: ["react", "vue"],
     },
+    {
+      title: "Tabs",
+      description:
+        "Showing one piece of content at a time - learn composition and state with tabs.",
+      previewLink: "/tabs",
+      otherFrontendsAvailable: ["react", "vue"],
+    },
   ];
 </script>
 
@@ -41,7 +48,7 @@
     here if you're curious.
   </p>
   {#if codePreviews.length > 0}
-    <div class="flex justify-start flex-col md:flex-row">
+    <div class="grid grid-cols-1 md:grid-cols-3">
       {#each codePreviews as codePreview (codePreviews.name)}
         <div class="my-2 md:mx-2">
           <CodePreviewCard

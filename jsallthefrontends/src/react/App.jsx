@@ -4,6 +4,7 @@ import HomePage from "./components/HomePage";
 import HelloWorldPage from "./components/HelloWorldPage";
 import CounterPage from "./components/CounterPage";
 import TodoListPage from "./components/TodoListPage";
+import TabsPage from "./components/TabsPage";
 import "./App.css";
 
 const App = () => (
@@ -21,6 +22,9 @@ const App = () => (
         </Route>
         <Route exact path="/todo-list">
           <TodoListPage />
+        </Route>
+        <Route exact path="/tabs">
+          <TabsPage />
         </Route>
         <Route path="*">
           <HomePage />

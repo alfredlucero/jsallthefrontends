@@ -5,6 +5,7 @@
   import HelloWorldPage from "./components/HelloWorldPage.svelte";
   import CounterPage from "./components/CounterPage.svelte";
   import TodoListPage from "./components/TodoListPage.svelte";
+  import TabsPage from "./components/TabsPage.svelte";
   import "./App.css";
 
   const routes = {
@@ -12,6 +13,7 @@
     "/hello-world": HelloWorldPage,
     "/counter": CounterPage,
     "/todo-list": TodoListPage,
+    "/tabs": TabsPage,
     "*": HomePage,
   };
 </script>

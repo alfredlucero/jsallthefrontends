@@ -13,7 +13,7 @@
         and open up the Vue dev tools if you have it installed in your browser to
         view the components.
       </p>
-      <div v-if="codePreviews.length > 0" class="flex justify-start flex-col md:flex-row">
+      <div v-if="codePreviews.length > 0" class="grid grid-cols-1 md:grid-cols-3">
         <div  
           v-for="codePreview in codePreviews"
           :key="codePreview.name"
@@ -54,6 +54,12 @@ const codePreviews = [
     description:
       "Render and manage a list of anything by looking at your favorite todo list example.",
     previewLink: "/todo-list",
+    otherFrontendsAvailable: ["react", "svelte"],
+  },
+  {
+    title: "Tabs",
+    description: "Showing one piece of content at a time - learn composition and state with tabs.",
+    previewLink: "/tabs",
     otherFrontendsAvailable: ["react", "svelte"],
   },
 ];
