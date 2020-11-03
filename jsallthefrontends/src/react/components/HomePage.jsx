@@ -24,6 +24,13 @@ const codePreviews = [
     previewLink: "/todo-list",
     otherFrontendsAvailable: ["vue", "svelte"],
   },
+  {
+    title: "Tabs",
+    description:
+      "Showing one piece of content at a time - learn composition and state with tabs.",
+    previewLink: "/tabs",
+    otherFrontendsAvailable: ["vue", "svelte"],
+  },
 ];
 
 const HomePage = () => {
