@@ -62,6 +62,12 @@ const codePreviews = [
     previewLink: "/tabs",
     otherFrontendsAvailable: ["react", "svelte"],
   },
+  {
+    title: "Carousel",
+    description: "Check out some transitions and cycle through a list of images in a carousel.",
+    previewLink: "/carousel",
+    otherFrontendsAvailable: ["react", "svelte"],
+  },
 ];
 
 export default {

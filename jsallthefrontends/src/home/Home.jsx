@@ -67,6 +67,17 @@ const codeExamples = [
       frontendsMap.svelte,
     ],
   },
+  {
+    title: "Carousel",
+    description:
+      "Check out some transitions and cycle through a list of images in a carousel.",
+    exampleLinkPath: "/carousel",
+    frontendExamples: [
+      frontendsMap.react,
+      frontendsMap.vue,
+      frontendsMap.svelte,
+    ],
+  },
 ];
 
 const Home = () => {
