@@ -31,6 +31,13 @@
       previewLink: "/tabs",
       otherFrontendsAvailable: ["react", "vue"],
     },
+    {
+      title: "Carousel",
+      description:
+        "Check out some transitions and cycle through a list of images in a carousel.",
+      previewLink: "/carousel",
+      otherFrontendsAvailable: ["react", "vue"],
+    },
   ];
 </script>
 

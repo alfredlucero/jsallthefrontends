@@ -6,6 +6,7 @@
   import CounterPage from "./components/CounterPage.svelte";
   import TodoListPage from "./components/TodoListPage.svelte";
   import TabsPage from "./components/TabsPage.svelte";
+  import CarouselPage from "./components/CarouselPage.svelte";
   import "./App.css";
 
   const routes = {
@@ -14,6 +15,7 @@
     "/counter": CounterPage,
     "/todo-list": TodoListPage,
     "/tabs": TabsPage,
+    "/carousel": CarouselPage,
     "*": HomePage,
   };
 </script>

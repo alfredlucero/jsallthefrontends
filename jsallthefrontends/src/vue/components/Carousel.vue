@@ -6,7 +6,7 @@
     
     <transition-group v-bind:name="slideTransition" tag="div" mode="in-out">
       <div class="flex flex-col shadow-md" v-for="i in [activeSlide]" :key="i">
-        <img :src="currentSlideImg" class="w-56 h-56 object-fit rounded-t-md" />
+        <img :src="currentSlideImg" class="w-56 h-56 object-fit rounded-t-md" :alt="currentSlideImgAltText" />
         <div class="p-4 text-indigo-600 rounded-b-md bg-white text-center">
           {{ currentSlideText }}
         </div>
@@ -111,6 +111,9 @@ export default {
     },
     currentSlideText() {
       return this.slides[this.activeSlide].slideText;
+    },
+    currentSlideImgAltText() {
+      return `Image of ${this.slides[this.activeSlide].slideText}`;
     },
   },
 };
