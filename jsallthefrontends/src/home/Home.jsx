@@ -67,6 +67,17 @@ const codeExamples = [
       frontendsMap.svelte,
     ],
   },
+  {
+    title: "Carousel",
+    description:
+      "Check out some transitions and cycle through a list of images in a carousel.",
+    exampleLinkPath: "/carousel",
+    frontendExamples: [
+      frontendsMap.react,
+      frontendsMap.vue,
+      frontendsMap.svelte,
+    ],
+  },
 ];
 
 const Home = () => {
@@ -84,7 +95,8 @@ const Home = () => {
         </p>
 
         <h3 className="mb-4">
-          Check out the JavaScript frontends aka "just all the frontends"
+          Check out the JavaScript frontends aka "just all the frontends" -
+          well, just the ones we integrated so far :)
         </h3>
 
         <div className="grid grid-cols-1 md:grid-cols-3">

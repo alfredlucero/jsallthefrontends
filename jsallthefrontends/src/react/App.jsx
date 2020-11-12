@@ -5,6 +5,7 @@ import HelloWorldPage from "./components/HelloWorldPage";
 import CounterPage from "./components/CounterPage";
 import TodoListPage from "./components/TodoListPage";
 import TabsPage from "./components/TabsPage";
+import CarouselPage from "./components/CarouselPage";
 import "./App.css";
 
 const App = () => (
@@ -25,6 +26,9 @@ const App = () => (
         </Route>
         <Route exact path="/tabs">
           <TabsPage />
+        </Route>
+        <Route exact path="/carousel">
+          <CarouselPage />
         </Route>
         <Route path="*">
           <HomePage />
