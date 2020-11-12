@@ -31,6 +31,13 @@ const codePreviews = [
     previewLink: "/tabs",
     otherFrontendsAvailable: ["vue", "svelte"],
   },
+  {
+    title: "Carousel",
+    description:
+      "Check out some transitions and cycle through a list of images in a carousel.",
+    previewLink: "/carousel",
+    otherFrontendsAvailable: ["vue", "svelte"],
+  },
 ];
 
 const HomePage = () => {
