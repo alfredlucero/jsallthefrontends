@@ -1,0 +1,11 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import { TodoApp } from "../../components/lit/TodoApp.lit";
+---
+
+<Layout title="JuSt All the Frontends | lit">
+  <main>
+    <p>Lit</p>
+    <TodoApp client:visible />
+  </main>
+</Layout>
