@@ -21,7 +21,7 @@
     "@types/alpinejs": "^3.7.0",
     "@webcomponents/template-shadowroot": "^0.1.0",
     "alpinejs": "^3.10.4",
-    "astro": "^1.4.6",
+    "astro": "^1.6.12",
     "lit": "^2.4.0",
     "preact": "^10.11.1",
     "react": "^18.2.0",
